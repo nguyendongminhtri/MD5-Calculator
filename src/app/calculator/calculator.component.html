@@ -1,0 +1,8 @@
+<p>calculator works!</p>
+<form #f="ngForm"(ngSubmit)="f.form.valid&&ngSubmit()" novalidate>
+  <input type="text" name="number1" [(ngModel)]="form.number1">
+  <input type="text" name="number2" [(ngModel)]="form.number2">
+  <button>Submit</button>
+</form>
+
+<h1>{{result}}</h1>
